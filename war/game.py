@@ -30,29 +30,3 @@ class Deck:
         player_half = self.cards[:middle]
         computer_half = self.cards[middle:]
         return player_half, computer_half
-
-
-
-def main():
-    deck = Deck()
-    deck.shuffle()
-    # print(deck)
-    player_half, computer_half = deck.split()
-    print(f"Player : {player_half}")
-    print(f"Computer : {computer_half}")
-if __name__ == "__main__":
-    main()
-
-
-# class Deck:
-#     def __init__(self, rank, value):
-#         self.rank = rank
-#         self.value = {   s
-#             "2":2, "3":3, "4":4, "5":5,"6":6, "7":7,
-#             "8":8, "9":9, "10":10, "jack":10,
-#             "queen":10, "king":10, "ace":10,
-#             }
-        # self.value = self.value.get(rank, None)
-
-    # def __str__(self):
-    #     return f"{self.rank} of {self.value}"
