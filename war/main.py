@@ -1,12 +1,13 @@
 from game import Deck
-
+from game import Flip
 
 def main():
+    player_name = input("Enter players name: ")
     deck = Deck()
     deck.shuffle()
     # print(deck)
     player_half, computer_half = deck.split()
-    print(f"Player : {player_half}")
+    print(f"{player_name} : {player_half}")
     print(f"Computer : {computer_half}")
 
 

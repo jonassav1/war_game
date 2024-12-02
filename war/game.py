@@ -30,3 +30,13 @@ class Deck:
         player_half = self.cards[:middle]
         computer_half = self.cards[middle:]
         return player_half, computer_half
+
+
+class Flip:
+    def __init__(self, player_deck, computer_deck, deck):
+        self.player_deck = player_deck
+        self.computer_deck = computer_deck
+        self.deck = deck
+
+    def flip_card(self, deck):
+
