@@ -9,7 +9,7 @@ card and then compare their values. Game ends when both players dont have any mo
 
 
 Requirements for the program : 
-    Initialize the deck and shuffle ir or actually just randomize it
+    Initialize the deck and shuffle it or actually just randomize it
     Split the deck evenly 26 cards each player and computer
     Write class or function that flips two cards and compares their values
     Count points for player and computer and when their cards are empty declare the winner
@@ -18,6 +18,3 @@ Requirements for the program :
     There must be two files, one for game another one for main 
     main runs the program gets inputs from player aka his name 
     Game file has deck class logic and game class logic card class logic
-
-
-

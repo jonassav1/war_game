@@ -50,4 +50,9 @@ class Flip:
         print(f"player card: {player_card}\n player card value: {player_card_value}")
         print(f"computer card: {computer_card}\n computer card value: {computer_card_value}")
 
+        while player_card_value == computer_card_value:
+            
+
+
+
 
