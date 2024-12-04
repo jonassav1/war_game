@@ -38,11 +38,16 @@ class Flip:
         self.computer_deck = computer_deck
         self.deck = deck
 
-    def flip_card(self, deck):
+    def flip_card(self):
         if not self.player_deck and not self.computer_deck:
             return "Game over, you and computer are out of cards."
         
         player_card = self.player_deck.pop(0)
         computer_card = self.computer_deck.pop(0)
         player_card_value = self.deck.get_card_value(player_card)
-        player_card_value = self.deck.get_card_value(computer_card)
+        computer_card_value = self.deck.get_card_value(computer_card)
+
+        print(f"player card: {player_card}\n player card value: {player_card_value}")
+        print(f"computer card: {computer_card}\n computer card value: {computer_card_value}")
+
+

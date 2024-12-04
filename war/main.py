@@ -9,6 +9,10 @@ def main():
     player_half, computer_half = deck.split()
     print(f"{player_name} : {player_half} \n")
     print(f"Computer : {computer_half}")
+    
+    flip = Flip(player_half,computer_half,deck)
+    flip.flip_card()
+    print(flip)
 
 
 if __name__ == "__main__":
