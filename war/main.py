@@ -7,7 +7,7 @@ def main():
     deck.shuffle()
     # print(deck)
     player_half, computer_half = deck.split()
-    print(f"{player_name} : {player_half}")
+    print(f"{player_name} : {player_half} \n")
     print(f"Computer : {computer_half}")
 
 

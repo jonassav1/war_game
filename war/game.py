@@ -39,4 +39,7 @@ class Flip:
         self.deck = deck
 
     def flip_card(self, deck):
-
+        if not self.player_deck and not self.computer_deck:
+            return "Game over, you and computer are out of cards."
+        
+        
