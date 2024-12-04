@@ -47,11 +47,21 @@ class Flip:
         player_card_value = self.deck.get_card_value(player_card)
         computer_card_value = self.deck.get_card_value(computer_card)
 
-        print(f"player card: {player_card}\n player card value: {player_card_value}")
-        print(f"computer card: {computer_card}\n computer card value: {computer_card_value}")
+        print(f"player card: {player_card}\n value: {player_card_value}")
+        print(f"computer card: {computer_card}\n value: {computer_card_value}")
 
         while player_card_value == computer_card_value:
-            
+            player_card = self.player_deck.pop(0)
+            computer_card = self.computer_deck.pop(0)
+            player_card_value = self.deck.get_card_value(player_card)
+            computer_card_value = self.deck.get_card_value(computer_card)
+            print(f"player card for the war: {player_card}\n value: {player_card_value}")
+            print(f"computer card for the war: {computer_card}\n value: {computer_card_value}")
+
+        if player_card_value > computer_card_value:
+            return "player wins this round"
+        else:
+            return "computer wins this round"
 
 
 
