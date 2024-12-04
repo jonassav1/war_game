@@ -42,4 +42,7 @@ class Flip:
         if not self.player_deck and not self.computer_deck:
             return "Game over, you and computer are out of cards."
         
-        
+        player_card = self.player_deck.pop(0)
+        computer_card = self.computer_deck.pop(0)
+        player_card_value = self.deck.get_card_value(player_card)
+        player_card_value = self.deck.get_card_value(computer_card)
